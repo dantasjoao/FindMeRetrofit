@@ -81,7 +81,6 @@ class UpdateFragmentAPI : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.menu_delete_company){
             deleteProduct()
-
         }
         return super.onOptionsItemSelected(item)
     }
@@ -125,7 +124,7 @@ class UpdateFragmentAPI : Fragment() {
                                 getString(R.string.successfull_updated_report),
                                 Toast.LENGTH_LONG
                             ).show()
-                            findNavController().navigate(R.id.action_updateFragment_to_listFragmend)
+                            findNavController().navigate(R.id.action_updateFragment_to_listFragmend2)
                         } else {
                             Toast.makeText(
                                 requireContext(), getString(
@@ -169,15 +168,14 @@ class UpdateFragmentAPI : Fragment() {
                     if (response.isSuccessful) {
                         val company: CompanyDto = response.body()!!
 
-                        if(company.status == "OK") {
+                        if (company.status == "OK") {
                             Toast.makeText(
                                 requireContext(),
                                 getString(R.string.successfull_deleted_report),
                                 Toast.LENGTH_LONG
                             ).show()
-                            findNavController().navigate(R.id.action_updateFragment_to_listFragmend)
-                        }
-                        else {
+                            findNavController().navigate(R.id.action_updateFragment_to_listFragmend2)
+                        } else {
                             Toast.makeText(
                                 requireContext(), getString(
                                     resources.getIdentifier(
@@ -190,12 +188,11 @@ class UpdateFragmentAPI : Fragment() {
 
                     } else {
 
-                        if(response.code() == 401){
+                        if (response.code() == 401) {
                             unauthorized(navigatonHandlder = {
                                 findNavController().navigate(R.id.action_updateFragment_to_userLoginFragment2)
                             })
-                        }
-                        else {
+                        } else {
                             somethingWentWrong()
                         }
                     }
@@ -205,11 +202,11 @@ class UpdateFragmentAPI : Fragment() {
                     somethingWentWrong()
                 }
             })
-
+        }
          builder.setNegativeButton(getString(R.string.n)){ _, _ -> }
          builder.setTitle("Delete  ${args.currentCompany.nameCompany}?")
         builder.setMessage("Are you sure you want to delete ${args.currentCompany.nameCompany}?")
         builder.create().show()
     }
-}}
+}
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/listFragmend">
+
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.pm.findme.fragments.login.UserLoginFragment"
+        android:label="@string/Login"
+        tools:layout="@layout/fragment_user_login">
+        <action
+            android:id="@+id/action_userLoginFragment_to_listFragmend"
+            app:destination="@id/listFragmend" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragmend"
+        android:name="com.pm.findme.ListFragmendAPI"
+        android:label="@string/list_company"
+        tools:layout="@layout/fragment_list_fragmend" >
+        <action
+            android:id="@+id/action_listFragmend_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragmend_to_updateFragment2"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_listFragmend_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.pm.findme.AddFragmentAPI"
+        android:label="@string/add_company"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragmend"
+            app:destination="@id/listFragmend" />
+        <action
+            android:id="@+id/action_addFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.pm.findme.fragments.update.UpdateFragmentAPI"
+        android:label="@string/update"
+        tools:layout="@layout/fragment_update" >
+        <actions
+            android:id="@+id/action_updateFragment_to_listFragmend"
+            app:destination="@id/listFragmend" />
+        <argument
+            android:name="currentCompany"
+            app:argType="com.pm.findme.api_FindMe.models.Company" />
+        <action
+            android:id="@+id/action_updateFragment_to_userLoginFragment2"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_updateFragment_to_listFragmend2"
+            app:destination="@id/listFragmend" />
+    </fragment>
+</navigation>

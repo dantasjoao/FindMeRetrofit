@@ -9,6 +9,8 @@
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout-land/fragment_reports_list.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout-land/fragment_update_report.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout-land/fragment_user_login.xml" value="0.1728395061728395" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/activivity_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/custom_row_reports_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/fragment_add.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/fragment_add_report.xml" value="0.20416666666666666" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/fragment_user_login.xml" value="0.22" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/layout/progessbar.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/menu/add_menu_report.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/menu/mapa.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/menu/menu_add_company.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/menu/reports_list_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaop/AndroidStudioProjects/FindMe-layout_version (1)/FindMe-layout_version/app/src/main/res/menu/update_delete_menu_report.xml" value="0.20416666666666666" />

@@ -2,6 +2,7 @@ package com.pm.findme
 
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.ListAdapter
@@ -48,9 +49,16 @@ class ListFragmendAPI : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_delete_company, menu)
+        inflater.inflate(R.menu.mapa, menu)
     }
-    private fun getAndSetData(view: View) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.menu_mapa) {
+            val intent = Intent(requireContext(), Maps::class.java)
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
+    }
+        private fun getAndSetData(view: View) {
 
        // view.llProgressBarList.bringToFront()
         // view.llProgressBarList.visibility = View.VISIBLE
